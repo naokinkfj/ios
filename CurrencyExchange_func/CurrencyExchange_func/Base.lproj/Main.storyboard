@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyExchange_func" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1dollar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-bf-5tV">
+                                <rect key="frame" x="20" y="60" width="99" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10dollar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ejp-nC-hYB">
+                                <rect key="frame" x="139" y="60" width="99" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20dollar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yOX-6h-mIt">
+                                <rect key="frame" x="20" y="123" width="99" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50dollar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FmI-pw-QQr">
+                                <rect key="frame" x="139" y="123" width="99" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="100dollar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="abl-mx-ZuO">
+                                <rect key="frame" x="139" y="191" width="99" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5dollar.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3u8-78-ASb">
+                                <rect key="frame" x="20" y="191" width="99" height="48"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-rq-6ry">
+                                <rect key="frame" x="258" y="257" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="oupput currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYq-Zs-9K0">
+                                <rect key="frame" x="168" y="357" width="132" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="output" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwj-NY-yOI">
+                                <rect key="frame" x="8" y="357" width="131" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXn-Vu-Qfg">
+                                <rect key="frame" x="46" y="295" width="46" height="30"/>
+                                <state key="normal" title="YEN"/>
+                                <connections>
+                                    <action selector="doConversionYEN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKP-zT-Sep"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve4-ei-idN">
+                                <rect key="frame" x="192" y="295" width="46" height="30"/>
+                                <state key="normal" title="EUR"/>
+                                <connections>
+                                    <action selector="doConversionEUR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnq-pG-R84"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="buttonEUR" destination="ve4-ei-idN" id="FEO-7h-Bq1"/>
+                        <outlet property="buttonYEN" destination="hXn-Vu-Qfg" id="BIu-il-ELz"/>
+                        <outlet property="outputCurrency" destination="iYq-Zs-9K0" id="JwM-2F-wbz"/>
+                        <outlet property="outputText" destination="xwj-NY-yOI" id="xgz-xo-cXK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="321"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="100dollar.jpg" width="346" height="146"/>
+        <image name="10dollar.jpg" width="337" height="149"/>
+        <image name="1dollar.jpg" width="340" height="148"/>
+        <image name="20dollar.jpg" width="318" height="158"/>
+        <image name="50dollar.jpg" width="256" height="109"/>
+        <image name="5dollar.jpg" width="347" height="145"/>
+    </resources>
+</document>
