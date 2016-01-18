@@ -20,9 +20,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        udText = userDefaults.objectForKey("UD") as! String
-        
-        if udText == "" {
+        if let tmpUdText = userDefaults.objectForKey("UD") {
+            udText = tmpUdText as! String
+        }else{
             userDefaults.setObject("Default", forKey: "UD")
             userDefaults.synchronize()
         }
@@ -45,5 +45,13 @@ class ViewController: UIViewController {
         udText = userDefaults.objectForKey("UD") as! String
         
         udLabel.text = udText
+    }
+
+    
+    @IBAction func udDeleteButton(sender: UIButton) {
+        
+        userDefaults.removeObjectForKey("UD")
+        
+        udLabel.text = "削除しました。"
     }
 }
