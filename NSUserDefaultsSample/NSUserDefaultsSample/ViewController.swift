@@ -23,8 +23,7 @@ class ViewController: UIViewController {
         if let tmpUdText = userDefaults.objectForKey("UD") {
             udText = tmpUdText as! String
         }else{
-            userDefaults.setObject("Default", forKey: "UD")
-            userDefaults.synchronize()
+            udText = "未設定"
         }
         
         udLabel.text = udText
