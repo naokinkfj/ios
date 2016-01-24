@@ -25,17 +25,31 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jH-ip-M3k">
-                                <rect key="frame" x="98" y="269" width="124" height="30"/>
+                                <rect key="frame" x="98" y="215" width="124" height="30"/>
                                 <state key="normal" title="アラート3"/>
                                 <connections>
                                     <action selector="alertButton3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KmH-zQ-rtP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHd-af-2IH">
+                                <rect key="frame" x="98" y="275" width="124" height="30"/>
+                                <state key="normal" title="アラート4"/>
+                                <connections>
+                                    <action selector="alertButton4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Iu-mJ-xxg"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oew-5r-ycI">
-                                <rect key="frame" x="98" y="186" width="124" height="30"/>
+                                <rect key="frame" x="98" y="155" width="124" height="30"/>
                                 <state key="normal" title="アラート2"/>
                                 <connections>
                                     <action selector="alertButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dca-ve-doz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk9-vJ-DEU">
+                                <rect key="frame" x="98" y="331" width="124" height="30"/>
+                                <state key="normal" title="アラート5"/>
+                                <connections>
+                                    <action selector="alertButton5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ocz-Va-1bq"/>
                                 </connections>
                             </button>
                         </subviews>
