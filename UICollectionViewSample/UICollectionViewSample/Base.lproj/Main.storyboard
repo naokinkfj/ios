@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dSc-Tv-Ja8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dSc-Tv-Ja8">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--UICollectionView Sample-->
+        <!--毎日貯金-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UICollectionViewSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,6 +20,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YaR-Gy-QCD">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ANV-4p-ybe">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -34,13 +36,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="UICollectionView Sample" id="kAs-XJ-hkL"/>
+                    <navigationItem key="navigationItem" title="毎日貯金" id="kAs-XJ-hkL">
+                        <barButtonItem key="rightBarButtonItem" title="貯金額" id="Jhx-tZ-yP6">
+                            <connections>
+                                <segue destination="uUa-u6-QeL" kind="show" id="CDx-rD-nu1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="collectionViewList" destination="YaR-Gy-QCD" id="ErP-oP-nZV"/>
@@ -48,11 +57,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="-368"/>
+            <point key="canvasLocation" x="1118" y="-368"/>
+        </scene>
+        <!--現在の貯金額-->
+        <scene sceneID="gA3-0C-yEe">
+            <objects>
+                <viewController title="現在の貯金額" wantsFullScreenLayout="YES" id="uUa-u6-QeL" customClass="DetailViewController" customModule="UICollectionViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7zA-Zt-sue"/>
+                        <viewControllerLayoutGuide type="bottom" id="PCA-xa-dMd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7fN-nC-0sR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="現在の貯金額: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWP-Dz-hWr">
+                                <rect key="frame" x="40" y="173" width="112" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="66,430" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJX-eD-NWq">
+                                <rect key="frame" x="179" y="175" width="59" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="円" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYq-Gr-yRO">
+                                <rect key="frame" x="246" y="180" width="22" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nJX-eD-NWq" secondAttribute="trailing" constant="54" id="121-Sr-owj"/>
+                            <constraint firstItem="lYq-Gr-yRO" firstAttribute="top" secondItem="7zA-Zt-sue" secondAttribute="bottom" constant="116" id="6lC-cj-xxQ"/>
+                            <constraint firstItem="nJX-eD-NWq" firstAttribute="top" secondItem="7zA-Zt-sue" secondAttribute="bottom" constant="111" id="TzR-Bh-A0i"/>
+                            <constraint firstItem="lYq-Gr-yRO" firstAttribute="leading" secondItem="nJX-eD-NWq" secondAttribute="trailing" constant="8" id="auV-2h-TDh"/>
+                            <constraint firstItem="SWP-Dz-hWr" firstAttribute="leading" secondItem="7fN-nC-0sR" secondAttribute="leadingMargin" constant="20" id="kgS-U8-6LL"/>
+                            <constraint firstItem="SWP-Dz-hWr" firstAttribute="top" secondItem="7zA-Zt-sue" secondAttribute="bottom" constant="109" id="uPP-A8-D68"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="totalMoney" destination="nJX-eD-NWq" id="zBg-D2-rRf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iO-pQ-oJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1587" y="-368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZJT-HE-82A">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KeU-vc-OAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dSc-Tv-Ja8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -65,7 +125,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Uz5-s2-GcX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KeU-vc-OAI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="456" y="-368"/>
         </scene>
