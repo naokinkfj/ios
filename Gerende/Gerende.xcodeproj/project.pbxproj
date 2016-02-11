@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8726FE311C66106100D79ADA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8726FE301C66106100D79ADA /* DetailViewController.swift */; };
 		87DA1B731C4A5D5600DC6E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DA1B721C4A5D5600DC6E93 /* AppDelegate.swift */; };
 		87DA1B751C4A5D5600DC6E93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DA1B741C4A5D5600DC6E93 /* ViewController.swift */; };
 		87DA1B781C4A5D5600DC6E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DA1B761C4A5D5600DC6E93 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8726FE301C66106100D79ADA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		87DA1B6F1C4A5D5600DC6E93 /* Gerende.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gerende.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DA1B721C4A5D5600DC6E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87DA1B741C4A5D5600DC6E93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				87DA1BB41C4A722200DC6E93 /* GerendeTableViewCell.xib */,
 				87DA1BB71C4A739800DC6E93 /* GerendeTableViewCellSmall.swift */,
 				87DA1BB81C4A739800DC6E93 /* GerendeTableViewCellSmall.xib */,
+				8726FE301C66106100D79ADA /* DetailViewController.swift */,
 			);
 			path = Gerende;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				87DA1B7B1C4A5D5700DC6E93 /* Gerende.xcdatamodeld in Sources */,
 				87DA1B751C4A5D5600DC6E93 /* ViewController.swift in Sources */,
 				87DA1BB51C4A722200DC6E93 /* GerendeTableViewCell.swift in Sources */,
+				8726FE311C66106100D79ADA /* DetailViewController.swift in Sources */,
 				87DA1B731C4A5D5600DC6E93 /* AppDelegate.swift in Sources */,
 				87DA1BB91C4A739800DC6E93 /* GerendeTableViewCellSmall.swift in Sources */,
 			);
@@ -385,6 +389,7 @@
 				87DA1B861C4A5D5700DC6E93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
